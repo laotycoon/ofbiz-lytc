@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SecurityPermission description="View operations in the Base Component." permissionId="BASE_VIEW"/>
+    <SecurityPermission description="Create operations in the Base Component." permissionId="BASE_CREATE"/>
+    <SecurityPermission description="Update operations in the Base Component." permissionId="BASE_UPDATE"/>
+    <SecurityPermission description="Delete operations in the Base Component." permissionId="BASE_DELETE"/>
+    <SecurityPermission description="ALL operations in the Base Component." permissionId="BASE_ADMIN"/>
+
+    <SecurityGroupPermission groupId="SUPER" permissionId="BASE_ADMIN"/>
+
+</entity-engine-xml>

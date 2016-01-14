@@ -20,10 +20,6 @@ under the License.
 
 <component-loader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/component-loader.xsd">
-    <load-components parent-directory="framework"/>
-    <load-components parent-directory="themes"/>
-    <load-components parent-directory="applications"/>
-    <load-components parent-directory="specialpurpose"/>
-    <load-components parent-directory="hot-deploy"/>
-    <load-components parent-directory="lytc"/>
+    <load-component component-location="base"/>
+    <load-component component-location="sso"/>
 </component-loader>

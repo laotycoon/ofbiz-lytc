@@ -18,12 +18,8 @@ specific language governing permissions and limitations
 under the License.
 -->
 
-<component-loader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/component-loader.xsd">
-    <load-components parent-directory="framework"/>
-    <load-components parent-directory="themes"/>
-    <load-components parent-directory="applications"/>
-    <load-components parent-directory="specialpurpose"/>
-    <load-components parent-directory="hot-deploy"/>
-    <load-components parent-directory="lytc"/>
-</component-loader>
+<project name="LYTC Build" default="build" basedir=".">
+    <filelist id="lytc-builds" dir="lytc"
+              files="base/build.xml,sso/build.xml"/>
+
+</project>
